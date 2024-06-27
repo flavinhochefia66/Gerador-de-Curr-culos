@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Currículos</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div>
+        
+      <h1 class="title">Gerador de Currículos</h1>
+      <form action="gerar_curriculo.php" method="post">
+        
+      <div>
+
+        <h4>Nome:</h4>
+        <input placeholder="Digite seu nome completo aqui." name="nome">
+        
+        <h4>Data de Nascimento: </h4>
+        <input type="date" name="data">
+
+        <h4>E-Mail: </h4>
+        <input type="email" name="email" placeholder="exemplo@email.com">
+
+        <h4>Endereço: </h4>
+        <input type="text" name="endereco" placeholder="Digite seu endereço completo aqui.">
+
+        <h4>Telefone: </h4>
+        <input type="tel" name="tel" placeholder="(99) 99999-9999">
+
+        <h4>Formação: </h4>
+        <input type="text" name="formacao" placeholder="Digite sua formação acadêmica aqui.">
+
+        <h4>Objetivo: </h4>
+        <input type="text" name="objetivo" placeholder="Qual o seu objetivo?" >
+
+        <div>
+
+          <h4>Experiências:</h4>
+          <input id="add" placeholder="Digite suas experiências."><button onclick="addExperiencia()" class="plusbutton" type="button">+</button>
+
+          <div id="experiencias"></div>
+        </div>
+
+        <button type="submit" class="buttonprint">Gerar Currículo</button>
+
+      </div>
+      </form>
+    </div>
+
+</body>
+</html> 
